@@ -1,0 +1,27 @@
+{
+  "name": "link-pdf",
+  "version": "0.0.1",
+  "description": "Transforming link to PDF",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielrufino/link-pdf.git"
+  },
+  "keywords": [
+    "PDF",
+    "Puppeteer",
+    "URL",
+    "HTML",
+    "Link",
+    "Parser"
+  ],
+  "author": "Gabriel Rufino <contato@gabrielrufino.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielrufino/link-pdf/issues"
+  },
+  "homepage": "https://github.com/gabrielrufino/link-pdf#readme"
+}
