@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/gabrielrufino/link-pdf/issues"
   },
-  "homepage": "https://github.com/gabrielrufino/link-pdf#readme"
+  "homepage": "https://github.com/gabrielrufino/link-pdf#readme",
+  "dependencies": {
+    "puppeteer": "^8.0.0"
+  }
 }
