@@ -1,17 +1,20 @@
-# Link PDF
+# PDF from Link - CLI
 
 Transforming link to PDF
 
-### Getting started
+## Getting started
+
+### Installing
 
 ```bash
-$ git clone https://github.com/gabrielrufino/link-pdf
-$ cd link-pdf
-$ npm install && npm link
-$ cd ..
-$ link-pdf https://en.wikipedia.org/wiki/Node.js
-$ ls
-link-pdf
-'Node.js - Wikipedia.pdf'
-$ xdg-open 'Node.js - Wikipedia.pdf'
+git clone https://github.com/gabrielrufino/PDFfromLink_CLI.git
+cd PDFfromLink_CLI
+npm ci
+npm link
+```
+
+### Executing
+
+```bash
+pdffromlink https://en.wikipedia.org/wiki/Node.js
 ```

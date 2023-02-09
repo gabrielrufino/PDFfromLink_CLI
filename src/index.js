@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 'use strict'
 
-const fs = require('fs')
-const puppeteer = require('puppeteer')
+import fs from 'node:fs'
+
+import puppeteer from 'puppetter'
 
 ;(async () => {
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({headless: true})
   try {
     const [,, link] = process.argv
 

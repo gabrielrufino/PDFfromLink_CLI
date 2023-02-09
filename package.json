@@ -1,9 +1,12 @@
 {
-  "name": "link-pdf",
+  "name": "@pdffromlink/cli",
   "version": "0.0.1",
+  "type": "module",
   "description": "Transforming link to PDF",
   "main": "src/index.js",
-  "bin": "src/index.js",
+  "bin": {
+    "pdffromlink": "src/index.js"
+  },
   "scripts": {
     "test": "jest"
   },
@@ -25,11 +28,12 @@
     "url": "https://github.com/gabrielrufino/link-pdf/issues"
   },
   "homepage": "https://github.com/gabrielrufino/link-pdf#readme",
-  "dependencies": {
-    "puppeteer": "^8.0.0"
-  },
   "devDependencies": {
     "http-server": "^0.12.3",
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "puppeteer": "^19.6.3"
   }
 }
