@@ -6,7 +6,7 @@ import fs from 'node:fs'
 import puppeteer from 'puppetter'
 
 ;(async () => {
-  const browser = await puppeteer.launch({headless: true})
+  const browser = await puppeteer.launch({ headless: true })
   try {
     const [,, link] = process.argv
 
@@ -21,7 +21,7 @@ import puppeteer from 'puppetter'
     }
 
     await page.pdf({
-      path,
+      path
     })
 
     browser.close()
