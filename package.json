@@ -8,6 +8,8 @@
     "pdffromlink": "src/index.js"
   },
   "scripts": {
+    "lint": "npx standard .",
+    "lint:fix": "npm run lint -- --fix",
     "test": "jest"
   },
   "repository": {
