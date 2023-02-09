@@ -3,7 +3,7 @@
 
 import fs from 'node:fs'
 
-import puppeteer from 'puppetter'
+import puppeteer from 'puppeteer'
 
 ;(async () => {
   const browser = await puppeteer.launch({ headless: true })
