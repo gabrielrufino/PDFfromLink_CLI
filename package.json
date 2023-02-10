@@ -1,6 +1,6 @@
 {
   "name": "@pdffromlink/cli",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "description": "Transforming link to PDF",
   "main": "src/index.js",
