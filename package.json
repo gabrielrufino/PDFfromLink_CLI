@@ -37,6 +37,6 @@
     "standard": "^17.0.0"
   },
   "dependencies": {
-    "puppeteer": "^19.6.3"
+    "puppeteer": "^19.7.1"
   }
 }
