@@ -2,7 +2,7 @@
   "name": "@pdffromlink/cli",
   "version": "1.0.0",
   "type": "module",
-  "description": "Transforming link to PDF",
+  "description": "Generates a PDF file from a link",
   "main": "src/index.js",
   "bin": {
     "pdffromlink": "src/index.js"

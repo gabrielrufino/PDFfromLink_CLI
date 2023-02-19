@@ -1,19 +1,14 @@
-# PDF from Link - CLI
+# PDFfromLink - CLI
 
-Transforming link to PDF
+Generates a PDF file from a link
 
-## Getting started
-
-### Installing
+## Installing
 
 ```bash
-git clone https://github.com/gabrielrufino/PDFfromLink_CLI.git
-cd PDFfromLink_CLI
-npm ci
-npm link
+npm i -g @pdffromlink/cli
 ```
 
-### Executing
+## Usage
 
 ```bash
 pdffromlink https://en.wikipedia.org/wiki/Node.js

@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-'use strict'
 
 import fs from 'node:fs'
 
@@ -23,8 +22,6 @@ import puppeteer from 'puppeteer'
     await page.pdf({
       path
     })
-
-    browser.close()
   } catch (error) {
     console.log(error.message)
   } finally {
