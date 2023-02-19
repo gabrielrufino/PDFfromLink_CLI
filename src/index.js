@@ -1,12 +1,11 @@
 #!/usr/bin/env node
-'use strict'
 
 import fs from 'node:fs'
 
-import puppeteer from 'puppetter'
+import puppeteer from 'puppeteer'
 
 ;(async () => {
-  const browser = await puppeteer.launch({headless: true})
+  const browser = await puppeteer.launch({ headless: true })
   try {
     const [,, link] = process.argv
 
@@ -21,10 +20,8 @@ import puppeteer from 'puppetter'
     }
 
     await page.pdf({
-      path,
+      path
     })
-
-    browser.close()
   } catch (error) {
     console.log(error.message)
   } finally {
