@@ -33,10 +33,10 @@
   "homepage": "https://github.com/gabrielrufino/link-pdf#readme",
   "devDependencies": {
     "jest": "^26.6.3",
-    "rimraf": "^4.1.2",
+    "rimraf": "^4.4.1",
     "standard": "^17.0.0"
   },
   "dependencies": {
-    "puppeteer": "^19.7.1"
+    "puppeteer": "^19.9.1"
   }
 }
