@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import fs from 'node:fs'
+import { join } from 'node:path'
 
 import puppeteer from 'puppeteer'
 
@@ -14,9 +15,9 @@ import puppeteer from 'puppeteer'
 
     const title = await page.title()
 
-    let path = `${process.cwd()}/${title}.pdf`
+    let path = join(process.cwd(), `${title}.pdf`)
     for (let i = 1; fs.existsSync(path); i++) {
-      path = `${process.cwd()}/${title} ${i}.pdf`
+      path = join(process.cwd(), `${title} ${i}.pdf`)
     }
 
     await page.pdf({
