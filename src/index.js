@@ -1,31 +1,31 @@
 #!/usr/bin/env node
 
-import fs from 'node:fs'
-import { join } from 'node:path'
+import fs from 'node:fs';
+import { join } from 'node:path';
 
-import puppeteer from 'puppeteer'
+import puppeteer from 'puppeteer';
 
-;(async () => {
-  const browser = await puppeteer.launch({ headless: true })
+(async () => {
+  const browser = await puppeteer.launch({ headless: true });
   try {
-    const [,, link] = process.argv
+    const [,, link] = process.argv;
 
-    const page = await browser.newPage()
-    await page.goto(link, { waitUntil: 'networkidle0' })
+    const page = await browser.newPage();
+    await page.goto(link, { waitUntil: 'networkidle0' });
 
-    const title = await page.title()
+    const title = await page.title();
 
-    let path = join(process.cwd(), `${title}.pdf`)
-    for (let i = 1; fs.existsSync(path); i++) {
-      path = join(process.cwd(), `${title} ${i}.pdf`)
+    let path = join(process.cwd(), `${title}.pdf`);
+    for (let i = 1; fs.existsSync(path); i += 1) {
+      path = join(process.cwd(), `${title} ${i}.pdf`);
     }
 
     await page.pdf({
-      path
-    })
+      path,
+    });
   } catch (error) {
-    console.log(error.message)
+    console.log(error.message);
   } finally {
-    browser.close()
+    browser.close();
   }
-})()
+})();

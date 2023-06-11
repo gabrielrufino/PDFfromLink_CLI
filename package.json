@@ -8,7 +8,7 @@
     "pdffromlink": "src/index.js"
   },
   "scripts": {
-    "lint": "npx standard .",
+    "lint": "npx eslint .",
     "lint:fix": "npm run lint -- --fix",
     "reinstall": "npx rimraf node_modules && npm ci",
     "test": "jest"
@@ -32,9 +32,10 @@
   },
   "homepage": "https://github.com/gabrielrufino/link-pdf#readme",
   "devDependencies": {
+    "@gabrielrufino/eslint-config": "^1.0.0",
+    "eslint": "^8.42.0",
     "jest": "^26.6.3",
-    "rimraf": "^5.0.1",
-    "standard": "^17.1.0"
+    "rimraf": "^5.0.1"
   },
   "dependencies": {
     "puppeteer": "^19.11.1"
