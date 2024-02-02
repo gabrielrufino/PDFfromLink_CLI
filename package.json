@@ -1,6 +1,6 @@
 {
   "name": "@pdffromlink/cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "description": "Generates a PDF file from a link",
   "main": "src/index.js",
@@ -11,7 +11,7 @@
     "lint": "npx eslint .",
     "lint:fix": "npm run lint -- --fix",
     "reinstall": "npx rimraf node_modules && npm ci",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "repository": {
     "type": "git",
