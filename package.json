@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabrielrufino/link-pdf.git"
+    "url": "git+https://github.com/gabrielrufino/PDFfromLink_CLI.git"
   },
   "keywords": [
     "PDF",
