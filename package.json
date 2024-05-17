@@ -1,6 +1,6 @@
 {
   "name": "@pdffromlink/cli",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "description": "Generates a PDF file from a link",
   "main": "src/index.js",
@@ -10,7 +10,6 @@
   "scripts": {
     "lint": "npx eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "reinstall": "npx rimraf node_modules && npm ci",
     "test": "jest --passWithNoTests"
   },
   "repository": {
@@ -34,8 +33,7 @@
   "devDependencies": {
     "@gabrielrufino/eslint-config": "^1.6.0",
     "eslint": "^8.57.0",
-    "jest": "^26.6.3",
-    "rimraf": "^5.0.5"
+    "jest": "^26.6.3"
   },
   "dependencies": {
     "puppeteer": "^19.11.1"
