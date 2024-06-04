@@ -1,6 +1,6 @@
 {
   "name": "@pdffromlink/cli",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "type": "module",
   "description": "Generates a PDF file from a link",
   "main": "src/index.js",
