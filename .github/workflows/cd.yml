@@ -14,10 +14,6 @@ jobs:
     steps:
       - uses: gabrielrufino/check-ci@main
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: gabrielrufino/node-pkg-cd@v1
         with:
-          node-version: 16
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          node-auth-token: ${{ secrets.NODE_AUTH_TOKEN }}
